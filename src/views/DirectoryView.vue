@@ -99,7 +99,7 @@ export default {
     components: { DropdownButton, CollapseButton, MobileNavigation, MobileFilters, CloseButton },
     data() {
         return {
-            products: store.getters.clothes,
+            products: store.state.products,
             selectedProducts: [],
             notice: false,
             notselect: false
