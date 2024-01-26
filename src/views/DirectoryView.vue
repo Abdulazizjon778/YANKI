@@ -37,7 +37,7 @@
                     <MobileFilters />
                 </div>
                 <div class="block w-[100%] h-[15px] bg-[white]"></div>
-                <div  v-for="item of this.products" :key="item.id" class="product">
+                <div  v-for="item of this.imagesFrom" :key="item.id" class="product">
                     <div @click="goToProduct(item)" class="image">
                         <img :src="item.img" alt="image">
                     </div>
@@ -100,7 +100,8 @@ export default {
             products: store.getters.clothes,
             selectedProducts: [],
             notice: false,
-            notselect: false
+            notselect: false,
+            imagesFrom: []
         }
     },
     mounted() {
@@ -108,7 +109,7 @@ export default {
         if (storedSelectedProducts) {
             this.selectedProducts = JSON.parse(storedSelectedProducts);
         }
-
+        this.imagesFrom = this.products
     },
     methods: {
         goToProduct(item) {
