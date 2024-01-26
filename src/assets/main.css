@@ -1,0 +1,15 @@
+@import './base.css';
+@font-face {
+  font-family: Raleway;
+  src: url("./fonts/Raleway/static/Raleway-Light.ttf");
+}
+@font-face {
+  font-family: Raleway-bold;
+  src: url("./fonts/Raleway/static/Raleway-ExtraBold.ttf");
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
