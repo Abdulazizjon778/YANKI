@@ -5,7 +5,7 @@ export default createStore({
     products: [
       {
         id: "1",
-        img: "./src/assets/images/IMAGEWHITE.png",
+        img: "../assets/images/IMAGEWHITE.png",
         title: "Белая куртка",
         price: "2900 грн",
         new: true,
