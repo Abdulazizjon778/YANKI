@@ -102,7 +102,7 @@ export default createStore({
     ]
   },
   getters: {
-    // clothes: (state) => state.products
+    clothes: (state) => state.products
   },
   mutations: {},
   actions: {},

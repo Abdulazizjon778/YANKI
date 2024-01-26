@@ -37,7 +37,7 @@
                     <MobileFilters />
                 </div>
                 <div class="block w-[100%] h-[15px] bg-[white]"></div>
-                <div v-for="item of this.products" :key="item.id" class="product">
+                <div  v-for="item of this.products" :key="item.id" class="product">
                     <div @click="goToProduct(item)" class="image">
                         <img :src="item.img" alt="image">
                     </div>
@@ -55,18 +55,16 @@
                         </div>
                     </div>
                     <div @click="selectedProduct(item)" class="selected">
-                        <img v-if="isSelectedProduct(item)" class="product-selected w-[15px] h-[15px]"
-                            src="../assets/images/Frame (9).png" alt="image">
-                        <img v-else class="product-selected w-[15px] h-[15px]" src="../assets/images/Frame (8).png"
-                            alt="image">
+                        <img v-if="isSelectedProduct(item)" class="product-selected w-[15px] h-[15px]" src="../assets/images/Frame (9).png" alt="image">
+                        <img v-else class="product-selected w-[15px] h-[15px]" src="../assets/images/Frame (8).png" alt="image">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>  
 
-    <div :class="{ 'notice-active': this.notice }" class="notification-wrp">
-        <div :class="{ 'message-notice': this.notice }" class="notification">
+    <div :class="{'notice-active': this.notice}" class="notification-wrp">
+        <div :class="{'message-notice': this.notice}" class="notification">
             <h2 class="title text-center">Товар добавлен в <br> избранное! </h2>
             <button @click="this.notice = false" class="btn-ok">Закрыть</button>
             <div @click="this.notice = false" class="close">
@@ -76,8 +74,8 @@
             </div>
         </div>
     </div>
-    <div :class="{ 'notice-active': this.notselect }" class="notification-wrp">
-        <div :class="{ 'message-notice': this.notselect }" class="notification">
+    <div :class="{'notice-active': this.notselect}" class="notification-wrp">
+        <div :class="{'message-notice': this.notselect}" class="notification">
             <h2 class="title text-center">Товар удален из <br> избранного</h2>
             <button @click="this.notselect = false" class="btn-ok">Закрыть</button>
             <div @click="this.notselect = false" class="close">
@@ -99,7 +97,7 @@ export default {
     components: { DropdownButton, CollapseButton, MobileNavigation, MobileFilters, CloseButton },
     data() {
         return {
-            products: store.state.products,
+            products: store.getters.clothes,
             selectedProducts: [],
             notice: false,
             notselect: false
@@ -137,23 +135,21 @@ export default {
 
         },
         isSelectedProduct(item) {
-            return this.selectedProducts.some(product => product.id === item.id);
-        },
+        return this.selectedProducts.some(product => product.id === item.id);
+    },
     },
 }
 </script>
 
 <style scoped>
-.message-notice {
+.message-notice{
     transform: scale(1) !important;
 }
-
-.notice-active {
+.notice-active{
     visibility: visible !important;
     opacity: 1 !important;
     z-index: 10000 !important;
 }
-
 .close {
     width: 50px;
     height: 50px;
@@ -190,7 +186,7 @@ export default {
     transition-duration: .3s;
 }
 
-.btn-ok:hover {
+.btn-ok:hover{
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
 
