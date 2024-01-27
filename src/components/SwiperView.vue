@@ -27,13 +27,13 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 import { Pagination } from "swiper/modules";
-
+import firstImage from "@/assets/images/Rectangle 11.jpg"
 export default {
     data() {
         return {
             categories: [
                 {
-                    img: "@/assets/images/Rectangle 11.jpg",
+                    img: firstImage,
                     title: "Куртки"
                 },
                 {
