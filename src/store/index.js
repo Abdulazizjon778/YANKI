@@ -1,11 +1,12 @@
 import { createStore } from "vuex";
-
+import imageUrl from "@/assets/images/Rectangle 11 (1).png"
 export default createStore({
   state: {
     products: [
       {
         id: "1",
-        img: "/dist/assets/Rectangle 11 (1).png",
+        // img: "../src/assets/images/Rectangle 11 (1).png",
+        img: imageUrl,
         title: "Белая куртка",
         price: "2900 грн",
         new: true,
