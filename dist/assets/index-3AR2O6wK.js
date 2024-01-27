@@ -11155,14 +11155,14 @@ const b0 = {
     data() {
       return {
         categories: [
-          { img: "../src/assets/images/Rectangle 11.jpg", title: "Куртки" },
-          { img: "../src/assets/images/Rectangle 10.jpg", title: "Пальто" },
-          { img: "../src/assets/images/Rectangle 7.jpg", title: "Шубы" },
-          { img: "../src/assets/images/Rectangle 9.jpg", title: "Парки" },
-          { img: "../src/assets/images/Rectangle 11.jpg", title: "Куртки" },
-          { img: "../src/assets/images/Rectangle 10.jpg", title: "Пальто" },
-          { img: "../src/assets/images/Rectangle 7.jpg", title: "Шубы" },
-          { img: "../src/assets/images/Rectangle 9.jpg", title: "Парки" },
+          { img: "../assets/Rectangle 11.jpg", title: "Куртки" },
+          { img: "../assets/Rectangle 10.jpg", title: "Пальто" },
+          { img: "../assets/Rectangle 7.jpg", title: "Шубы" },
+          { img: "../assets/Rectangle 9.jpg", title: "Парки" },
+          { img: "../assets/Rectangle 11.jpg", title: "Куртки" },
+          { img: "../assets/Rectangle 10.jpg", title: "Пальто" },
+          { img: "../assets/Rectangle 7.jpg", title: "Шубы" },
+          { img: "../assets/Rectangle 9.jpg", title: "Парки" },
         ],
       };
     },
