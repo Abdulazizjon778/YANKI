@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <section class="w-[100%] min-h-[6vh] m-auto flex justify-center items-center">
         <div class="wrapper">
             <div class="navigation">
@@ -413,4 +413,4 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-}</style> -->
+}</style>
