@@ -33,7 +33,7 @@ export default {
         return {
             categories: [
                 {
-                    img: "../src/assets/images/Rectangle 11.jpg",
+                    img: "@/assets/images/Rectangle 11.jpg",
                     title: "Куртки"
                 },
                 {
