@@ -28,6 +28,9 @@ import { Navigation } from "swiper/modules";
 
 import { Pagination } from "swiper/modules";
 import firstImage from "@/assets/images/Rectangle 11.jpg"
+import secondImage from "@/assets/images/Rectangle 10.jpg"
+import thirdImage from "@/assets/images/Rectangle 7.jpg"
+import fourthImage from "@/assets/images/Rectangle 9.jpg"
 export default {
     data() {
         return {
@@ -37,31 +40,31 @@ export default {
                     title: "Куртки"
                 },
                 {
-                    img: "../src/assets/images/Rectangle 10.jpg",
+                    img: secondImage,
                     title: "Пальто"
                 },
                 {
-                    img: "../src/assets/images/Rectangle 7.jpg",
+                    img: thirdImage,
                     title: "Шубы"
                 },
                 {
-                    img: "../src/assets/images/Rectangle 9.jpg",
+                    img: fourthImage,
                     title: "Парки"
                 },
                 {
-                    img: "../src/assets/images/Rectangle 11.jpg",
+                    img: firstImage,
                     title: "Куртки"
                 },
                 {
-                    img: "../src/assets/images/Rectangle 10.jpg",
+                    img: secondImage,
                     title: "Пальто"
                 },
                 {
-                    img: "../src/assets/images/Rectangle 7.jpg",
+                    img: thirdImage,
                     title: "Шубы"
                 },
                 {
-                    img: "../src/assets/images/Rectangle 9.jpg",
+                    img: fourthImage,
                     title: "Парки"
                 },
             ]
