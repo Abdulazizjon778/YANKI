@@ -14,7 +14,7 @@ export default createStore({
       },
       {
         id: "2",
-        img: "../src/assets/images/Rectangle 10 (2).png",
+        img: "@/assets/images/Rectangle 10 (2).png",
         title: "Синее пальто",
         price: "3150 грн",
         new: false,
